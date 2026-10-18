@@ -1,5 +1,5 @@
-:root { --bg: #eef4fb; --card: white; --text: #1b2a3a; --accent: #e4572e; --chip: #dcebf9; }
-:root.dark { --bg: #121a24; --card: #1d2733; --text: #e6edf5; --accent: #f07a55; --chip: #2a3a4d; }
+:root { --bg: #eef4fb; --card: white; --text: #1b2a3a; --accent: #1769aa; --chip: #dcebf9; }
+:root.dark { --bg: #121a24; --card: #1d2733; --text: #e6edf5; --accent: #4aa3e8; --chip: #2a3a4d; }
 
 body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text);
        margin: 0; min-height: 100vh; display: grid; place-items: center;
