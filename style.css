@@ -1,9 +1,15 @@
-body { font-family: system-ui, sans-serif; background: #eef4fb;
-       margin: 0; min-height: 100vh; display: grid; place-items: center; }
-.card { background: white; padding: 40px; border-radius: 18px; max-width: 560px; margin: 24px;
+:root { --bg: #eef4fb; --card: white; --text: #1b2a3a; --accent: #e4572e; --chip: #dcebf9; }
+:root.dark { --bg: #121a24; --card: #1d2733; --text: #e6edf5; --accent: #f07a55; --chip: #2a3a4d; }
+
+body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text);
+       margin: 0; min-height: 100vh; display: grid; place-items: center;
+       transition: background .2s, color .2s; }
+.card { background: var(--card); padding: 40px; border-radius: 18px; max-width: 560px; margin: 24px;
         box-shadow: 0 12px 32px #1e3a5f20; text-align: center; }
-button { background: #e4572e; color: white; border: 0;
+button { background: var(--accent); color: white; border: 0;
          padding: 12px 22px; border-radius: 8px; cursor: pointer; }
+.actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 section { margin-top: 28px; }
 .skills { list-style: none; padding: 0; display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
-.skills li { background: #dcebf9; padding: 6px 14px; border-radius: 999px; }
+.skills li { background: var(--chip); padding: 6px 14px; border-radius: 999px; }
+a { color: var(--accent); }
